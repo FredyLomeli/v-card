@@ -23,9 +23,8 @@ YII_CSRF_TOKEN='672d556228bbfee3bc51655338f5aae56e634c89';
     <!--Facebook meta-->
     <meta property="og:url"
           content="?trackSharing=1"/>
-    <meta property="og:title" content="Gustavo Ernesto Zuno Lozano"/>
-    <meta property="og:description" content="Somos una empresa con 10 años de experiencia en la instalación y mantenimiento de plantas
-eléctricas, respaldo de energía y climatización industrial."/>
+    <meta property="og:title" content="Alfredo Lomelí Ramírez"/>
+    <meta property="og:description" content="Somos expertos en la creación de herramientas digitales que te ayuden a automatizar los procesos de tu empresa."/>
     <meta property="og:image" content="img/logo.png"/>
     <meta property="og:image:width" content="200"/>
     <meta property="og:image:height" content="200"/>
@@ -33,17 +32,15 @@ eléctricas, respaldo de energía y climatización industrial."/>
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="http://localhost/vcard/index.html?trackSharing=1">
-    <meta name="twitter:title" content="Gustavo Ernesto Zuno Lozano">
-    <meta name="twitter:description" content="Somos una empresa con 10 años de experiencia en la instalación y mantenimiento de plantas
-eléctricas, respaldo de energía y climatización industrial.">
+    <meta name="twitter:title" content="Alfredo Lomelí Ramírez">
+    <meta name="twitter:description" content="Somos expertos en la creación de herramientas digitales que te ayuden a automatizar los procesos de tu empresa.">
     <meta name="twitter:image" content="img/logo.png">
     <meta name="twitter:image:width" content="200">
     <meta name="twitter:image:height" content="200">
 
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Gustavo Ernesto Zuno Lozano">
-    <meta itemprop="description" content="Somos una empresa con 10 años de experiencia en la instalación y mantenimiento de plantas
-eléctricas, respaldo de energía y climatización industrial.">
+    <meta itemprop="name" content="Alfredo Lomelí Ramírez">
+    <meta itemprop="description" content="Somos expertos en la creación de herramientas digitales que te ayuden a automatizar los procesos de tu empresa.">
     <meta itemprop="image" content="img/logo.png">
 </head>
 <body id="dvcard-body" ng-controller="ComplexController"
@@ -312,7 +309,7 @@ eléctricas, respaldo de energía y climatización industrial.">
                     <li data-test="send-to-my-phone-button" ng-click="loadDemo ? callAction($event, 'addContactAction') : ''" class="addContactAction">
                         <i class="iconFab icon-fab-share-savecontact"></i>
                         <a ng-if="!loadDemo"
-                           href="vcard/vcard_gustavo ernesto_zuno lozano.vcf"
+                           href="vcard/vcard_alfredo lomeli ramirez.vcf"
                            rel="external">
                             Guardar en mi telefono                        </a>
                         <a ng-if="loadDemo"
@@ -913,7 +910,33 @@ eléctricas, respaldo de energía y climatización industrial.">
         $scope.loadDemo = parent && typeof parent.ImHere === "function";
 
         //Get the json data form the file
-        json_data = {"show_directions":true,"form":[{"section_design":{"fold":false}},{"section_information":{"fold":false}},{"section_social":{"fold":false}},{"section_welcome_screen":[]},{"section_advance_options":{"fold":true}}],"color1":"#455a64","color2":"#e91e63","avatar":"\/\/qrcgcustomers.s3-eu-west-1.amazonaws.com\/account24053307\/34824490_1.png?0.9987883513483807","avatar_extra":{"zoom":100,"background":"#ffffff"},"address":{"autocomplete":"MIGUEL BLANCO # 1342"},"welcome_screen":"img\/vcard.png","welcome_extra":{"zoom":50,"background":"#ffffff"},"code":{"channels":[{"input_prefix_label":"URL","link":"https:\/\/www.facebook.com\/profile.php?id=100088934317618&mibextid=ZbWKwL","label":"","name":"Facebook"}]},"firstname":"Gustavo Ernesto","lastname":"Zuno Lozano","numbers_mobile":"33 1810 6382","email":"gustavo.zuno@triforze.mx","company":"TRIFORZE","street_number":"1342","street":"Calle Miguel Blanco","city":"Guadalajara","state":"Jal.","country":"Mexico","zip":"44160","website":"https:\/\/triforze.mx","bio":"Somos una empresa con 10 a\u00f1os de experiencia en la instalaci\u00f3n y mantenimiento de plantas\nel\u00e9ctricas, respaldo de energ\u00eda y climatizaci\u00f3n industrial.","job":"Gerente"};
+        json_data = {"show_directions":true,"form":[{
+            "section_design":{"fold":false}},
+            {"section_information":{"fold":false}},
+            {"section_social":{"fold":false}},
+            {"section_welcome_screen":[]},
+            {"section_advance_options":{"fold":true}}],
+            
+            "color1":"#455a64","color2":"#e91e63","avatar":"https:\/\/fredylomeli.github.io\/v-card\/img\/logo.png",
+            //"color1":"#455a64","color2":"#e91e63","avatar":"http:\/\/localhost\/v-card\/img\/logo.png",
+            "avatar_extra":{"zoom":100,"background":"#ffffff"},
+            "address":{"autocomplete":"Gonzalo Curiel # 758"},
+            "welcome_screen":"img\/vcard.png","welcome_extra":{"zoom":50,"background":"#ffffff"},
+            "code":{"channels":[{"input_prefix_label":"URL","link":"https:\/\/www.facebook.com\/profile.php","label":"","name":"Facebook"}]},
+            "firstname":"Alfredo",
+            "lastname":"Lomelí Ramírez",
+            "numbers_mobile":"378 127 26 91",
+            "email":"alfredo.lomeli@frexal.net",
+            "company":"Frexal Soluciones Digitales",
+            "street_number":"758",
+            "street":"Calle Gonzalo Curiel",
+            "city":"Tepatitlán","state":"Jal.",
+            "country":"Mexico",
+            "zip":"47600",
+            "website":"https:\/\/frexal.net",
+            "bio":"Somos expertos en la creación de herramientas digitales que te ayuden a automatizar los procesos de tu empresa.",
+            "job":"Gerente"
+        };
 
 //        //Upgrade old vcards created before 13.04 with show_directions parameter
 //        if (angular.isUndefined(json_data.show_directions))
